@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+
+nav {
+    background-color: rgb(22, 10, 51);
+    color: white;
+    height: 50px;
+    /* font-size: 55px; */
+    width: 100%;
+    font-size: 5vw;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+nav ul {
+    list-style: none;
+    /* display: flex; */
+    font-size: 4vh;
+}
+
+.gameContainer {
+    /* background-color: turquoise; */
+    /* width: 35%; */
+    display: flex;
+    flex-wrap: wrap;
+    /* align-items: center; */
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.container {
+    /* background-color: violet; */
+    display: grid;
+    margin: 10px;
+    flex-wrap: wrap;
+    grid-template-columns: repeat(3, 20vh);
+    grid-template-rows: repeat(3, 20vh);
+}
+
+
+/* FINISH LINE */
+
+.finish {
+    position: absolute;
+    width: 0;
+    background-color: #201244;
+    height: 2px;
+    transform: translate(32px, 33px);
+    transition: width 0.5s ease-in-out;
+}
+
+.box {
+    display: flex;
+    border: 2px solid rgb(0, 0, 0);
+    justify-content: center;
+    align-items: center;
+    font-size: 5vw;
+    font-family: 'Times New Roman', Times, serif;
+    cursor: pointer;
+}
+
+.box:hover {
+    background-color: rgb(243, 235, 235);
+}
+
+.gameInfo {
+    font-family: 'Times New Roman', Times, serif;
+    padding: 0px 40px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+}
+
+.infoText {
+    margin: 20px 0px;
+    display: flex;
+    flex-direction: column;
+}
+
+.info {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 700;
+    color: rgb(17, 19, 100);
+}
+
+.info h1 {
+    font-size: 2vh;
+}
+
+#reset {
+    padding: 2px 6px;
+    margin: 15px 10px;
+    background-color: rgb(22, 10, 51);
+    border-radius: 6px;
+    color: white;
+    font-family: sans-serif;
+}
+
+#reset:hover {
+    background-color: rgb(74, 69, 85);
+}
+
+.img {
+    display: none;
+}
+
+
+/* UTILITY CLASSES */
+
+.bt-0 {
+    border-top: 0;
+}
+
+.bl-0 {
+    border-left: 0;
+}
+
+.bb-0 {
+    border-bottom: 0;
+}
+
+.br-0 {
+    border-right: 0;
+}
